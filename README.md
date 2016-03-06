@@ -1,0 +1,1 @@
+# sample_delete_multiple_records_at_once
