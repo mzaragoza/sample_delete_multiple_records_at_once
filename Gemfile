@@ -24,9 +24,15 @@ group :development, :test do
   gem "better_errors"                                                                # Better error page for Rack apps
   gem "binding_of_caller"                                                            # Retrieve the binding of a method's caller
   gem "factory_girl_rails", "~> 4.0"                                                 # A library for setting up Ruby objects as test data
-  gem 'byebug'                                                                       # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'spring'                                                                       # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'awesome_print'                                                                # Pretty print your Ruby objects with style
+  gem 'byebug'                                                                       # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'capybara'                                                                     # Acceptance test
+  gem 'database_cleaner'                                                             # Strategies for cleaning databases
+  gem 'launchy'                                                                      # For opening save_and_open_page automatically
+  gem 'rspec-rails', '~> 3.0'                                                        # testing framework
+  gem 'rspec-retry'                                                                  #  retry randomly failing rspec example
+  gem 'spring'                                                                       # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+#  gem 'capybara-webkit'                                                              # A Capybara driver for headless WebKit to test JavaScript web apps
 end
 
 group :doc do
