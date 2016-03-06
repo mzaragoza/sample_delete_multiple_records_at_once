@@ -1,0 +1,15 @@
+%h1 Delete multiple records at once
+%h2 There are currently #{users.count} loaded on this page
+%h3 if there are 0 there will be 100 more loaded
+= simple_form_for :user, :url => delete_selected_path, :method => :delete do |f|
+  %table
+    %tr
+      %td Select
+      %td Name
+    - users.each do |user|
+      %tr
+        %td= check_box_tag 'users_ids[]', user.id 
+        %td= user.name
+    %tr
+      %td
+      %td= f.button :submit, 'Delete Selected'
